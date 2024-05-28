@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Search from '@/assets/svg/search'
+import Search from "@/assets/svg/search";
 
 const styles = {
   header: `bg-[17171A]`,
@@ -9,8 +9,8 @@ const styles = {
   navItem: `relative mr-1 cursor-pointer hover:opacity-60`,
   navlink: ``,
   badge: `rounded-full bg-blue-600 h-1 w-1 absolute bottom-5 right-0 top-1 ring-4`,
-  inputContainer:`flex items-center justify-center p-2 rounded bg-[#171924]`,
-  input:`bg-transparent outling-none text-white w-70 ml-3`
+  inputContainer: `flex items-center justify-center p-2 rounded bg-[#171924]`,
+  input: `bg-transparent outling-none text-white w-70 ml-3`,
 };
 
 const Header = () => {
@@ -63,7 +63,8 @@ const Header = () => {
           {/* connnect button */}
           <div className={styles.inputContainer}>
             {/* search button */}
-            <input type="text" className={styles.input} placeholder=""/>
+            <Search />
+            <input type="text" className={styles.input} placeholder="" />
           </div>
         </div>
       </div>
